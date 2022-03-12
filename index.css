@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Global */
+
+body {
+    margin: unset;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.main-menu,
+.mobile-menu {
+    background: #333333;
+    padding: 1rem 0;
+}
+
+.main-navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    margin: unset;
+}
+
+.main-navigation li,
+.mobile-navigation li {
+    list-style: none;
+    padding: 0.5rem 0.75rem;
+    color: #fff;
+}
+
+.main-navigation-cta a,
+.mobile-navigation-cta a {
+    cursor: pointer;
+}
+
+.main-navigation li a,
+.main-navigation-cta a,
+.mobile-navigation li a,
+.mobile-navigation-cta a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 250ms ease;
+}
+
+.main-navigation li a:hover,
+.main-navigation-cta a:hover,
+.mobile-navigation li a:hover,
+.mobile-navigation-cta a:hover {
+    opacity: .7;
+}
+
+.main-navigation li:first-child a,
+.mobile-navigation li:first-child a {
+    background: #282828;
+    padding: 0.5rem 0.6rem;
+    border-radius: 10px;
+    display: flex;
+}
+
+.main-navigation li:not(:last-child) {
+    border-right: 1px solid #484848;
+}
+
+.main-navigation-cta a,
+.mobile-navigation-cta a {
+    background: #282828;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation-cta a img,
+.mobile-navigation-cta a img {
+    padding-right: 0.5rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-navigation-burger {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mobile-navigation-burger a {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.mobile-navigation-button-open:not(.active),
+.mobile-navigation-button-close:not(.active) {
+    display: none;
+}
+
+.mobile-navigation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background: #000;
+    padding: 2rem;
+    margin: 0;
+    width: 325px;
+    transition: transform 500ms ease;
+    transform: translateX(0);
+}
+
+.mobile-navigation ul {
+    margin: unset;
+    padding: unset;
+}
+
+.mobile-navigation:not(.active) {
+    transform: translateX(-100%)
+}
+
+.mobile-navigation li:first-child,
+.mobile-navigation li:last-child {
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
