@@ -18,10 +18,26 @@ section {
     align-items: center;
 }
 
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
 .wrapper {
     max-width: 1080px;
     width: 100%;
     margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
 }
 
 
@@ -39,13 +55,11 @@ header {
 }
 
 .main-navigation-container {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .main-navigation {
-    display: flex;
     align-items: center;
     margin: unset;
 }
@@ -110,7 +124,6 @@ header {
 }
 
 .mobile-navigation-burger {
-    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
@@ -196,6 +209,9 @@ header {
 }
 
 
+/* Section 3 */
+
+
 /* Section 4 */
 
 #section-4 {
@@ -203,7 +219,6 @@ header {
 }
 
 .tab-header-container ul {
-    display: flex;
     justify-content: center;
     padding: unset;
 }
