@@ -9,7 +9,7 @@ html {
 body {
     margin: unset;
     font-family: 'Open Sans', sans-serif;
-    background: #144252;
+    /* background: #144252; */
 }
 
 section {
@@ -29,6 +29,13 @@ h2 {
 
 h3 {
     font-size: 25px;
+}
+
+.background-overlay {
+    background-image: url("./images/backgroundimage1.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -226,6 +233,72 @@ header {
 
 /* Section 2 */
 
+#section-2 {
+    color: #fff;
+}
+
+#section-2 img {
+    width: 100%;
+}
+
+#section-2 h2,
+#section-2 h3 {
+    margin-bottom: unset;
+}
+
+#section-2 h2 {
+    font-weight: 600;
+    line-height: 1em;
+}
+
+#section-2 h3 {
+    font-size: 50px;
+    line-height: 1em;
+}
+
+#section-2 .section-header-container,
+#section-2 .section-content-container {
+    width: 50%;
+    align-items: center;
+}
+
+#section-2 .section-header-container {
+    padding-right: 4rem;
+}
+
+#section-2 .section-content-container {
+    padding-left: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #section-2 .section-header-container,
+    #section-2 .section-content-container {
+        padding: 0 2rem;
+    }
+    #section-2 .section-header-container {
+        width: 40%;
+    }
+    #section-2 .section-content-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #section-2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #section-2 .wrapper {
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    #section-2 .section-header-container,
+    #section-2 .section-content-container {
+        width: 100%;
+        padding: unset;
+    }
+}
+
 
 /* Section 3 */
 
@@ -253,7 +326,11 @@ header {
 /* Section 4 */
 
 #section-4 {
-    background: #144252;
+    /* background: #144252; */
+    background-image: url("./images/backgroundimage2.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .tab-header-container ul {
