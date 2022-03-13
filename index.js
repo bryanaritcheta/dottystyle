@@ -103,8 +103,8 @@ $(window).scroll(function() {
     if (isInView($("#section-4"))) {
         $("#side-nav-section-4").addClass("active");
     }
-    // Handler for section 1
-    if (isInView($("#section-5"))) {
-        $("#side-nav-section-5").addClass("active");
-    }
+    // Handler for section 5
+    // if (isInView($("#section-5"))) {
+    //     $("#side-nav-section-5").addClass("active");
+    // }
 })
