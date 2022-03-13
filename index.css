@@ -268,7 +268,7 @@ header {
     transition: transform 250ms ease;
 }
 
-#section-1 #section-1-static .play-video-button {
+#section-1 #section-1-static .play-video-button:hover {
     transform: scale(1.1);
 }
 
