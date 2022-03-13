@@ -12,8 +12,8 @@ $(document).ready(function() {
     });
 
     // Handler for tabs
-    $(".tab-header a").click(function() {
-        console.log("Test");
+    $(".tab-header").click(function() {
+        //console.log("Test");
         //
         $(this).closest(".tab-header-container").find(".tab-header").removeClass("default");
         $(this).closest(".tab-header-container").find(".tab-header").removeClass("active");
@@ -42,6 +42,18 @@ $(document).ready(function() {
     //
     $("#tab-header-5").click(function() {
         $("#tab-content-5").addClass("active");
+    });
+
+    // Handler for video play button
+    // Play
+    $(".play-video-button").click(function() {
+        $(this).closest("section").find("#section-1-static").toggleClass("hidden");
+        $(this).closest("section").find("#section-1-video").toggleClass("hidden");
+    });
+    // Close
+    $(".close-video-button").click(function() {
+        $(this).closest("section").find("#section-1-static").toggleClass("hidden");
+        $(this).closest("section").find("#section-1-video").toggleClass("hidden");
     });
 });
 

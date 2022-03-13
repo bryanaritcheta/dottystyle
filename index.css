@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-/* Global */
+/*
+/* Global
+*/
 
 html {
     scroll-behavior: smooth;
@@ -9,7 +11,6 @@ html {
 body {
     margin: unset;
     font-family: 'Open Sans', sans-serif;
-    /* background: #144252; */
 }
 
 section {
@@ -31,7 +32,7 @@ h3 {
     font-size: 25px;
 }
 
-.background-overlay {
+.background-image {
     background-image: url("./images/backgroundimage1.png");
     background-size: cover;
     background-position: top center;
@@ -60,11 +61,14 @@ h3 {
 }
 
 
-/* Header */
+/*
+/* Header
+*/
 
 header {
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .main-menu,
@@ -230,8 +234,116 @@ header {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .background-image {
+        background-position: top right;
+    }
+}
 
-/* Section 2 */
+
+/*
+/* Section 1
+*/
+
+#section-1 #section-1-static.wrapper {
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    padding-top: 12rem;
+}
+
+#section-1 #section-1-static .section-content-container:not(:nth-child(2)) {
+    align-items: center;
+    width: fit-content;
+    padding: 0 2rem;
+}
+
+#section-1 #section-1-static .section-content-container img {
+    width: 100%;
+}
+
+#section-1 #section-1-static .play-video-button {
+    max-width: 140px;
+    cursor: pointer;
+    transition: transform 250ms ease;
+}
+
+#section-1 #section-1-static .play-video-button {
+    transform: scale(1.1);
+}
+
+#section-1 #section-1-static div.section-content-container:last-child img {
+    margin-bottom: -5rem;
+    opacity: .5;
+}
+
+#section-1 #section-1-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #000000d9;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#section-1 #section-1-static.hidden,
+#section-1 #section-1-video.hidden {
+    display: none;
+}
+
+#section-1 #section-1-video .wrapper {
+    padding: 0 1rem;
+}
+
+#section-1 #section-1-video .close-video-button {
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+#section-1 #section-1-video iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+@media only screen and (max-width: 1440px) {
+    #section-1 #section-1-static div.section-content-container:last-child img {
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #section-1 #section-1-static.wrapper {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    #section-1 #section-1-static .section-content-container:not(:nth-child(2)) {
+        padding: unset;
+    }
+    #section-1 #section-1-static .section-content-container:first-child {
+        padding-bottom: 3rem;
+    }
+    #section-1 #section-1-static .section-content-container:nth-child(2) {
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #section-1 #section-1-static.wrapper {
+        padding-top: 9rem;
+    }
+    #section-1 #section-1-static .section-content-container:first-child {
+        padding-bottom: 10rem;
+    }
+}
+
+
+/*
+/* Section 2
+*/
 
 #section-2 {
     color: #fff;
@@ -300,7 +412,9 @@ header {
 }
 
 
-/* Section 3 */
+/*
+/* Section 3
+*/
 
 #section-3 {
     color: #fff;
@@ -323,7 +437,9 @@ header {
 }
 
 
-/* Section 4 */
+/*
+/* Section 4
+*/
 
 #section-4 {
     /* background: #144252; */
