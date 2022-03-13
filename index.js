@@ -55,6 +55,10 @@ $(document).ready(function() {
         $(this).closest("section").find("#section-1-static").toggleClass("hidden");
         $(this).closest("section").find("#section-1-video").toggleClass("hidden");
     });
+    $("div").not("#section-1-video .section-content-container").click(function() {
+        $(this).closest("section").find("#section-1-static").toggleClass("hidden");
+        $(this).closest("section").find("#section-1-video").toggleClass("hidden");
+    });
 });
 
 // Handler for side menu
